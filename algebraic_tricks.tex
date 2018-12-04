@@ -1,0 +1,45 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+\everymath{\displaystyle} % Automatically use \displaystyle while in inline math mode
+\setlength{\tabcolsep}{20pt} % More spacing between tabular columns
+\renewcommand{\arraystretch}{3.5} % More spacing between tabular rows
+
+% Change margins for the sake of being able to fit 3 tabular columns
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+
+\title{
+    \textbf{\textsc {
+        The Handy Dandy Book of\\
+        {\Huge Algebraic Tricks}
+    }}
+}
+\author{Adrian Borup}
+\date{\today}
+
+\begin{document}
+
+% Front page:
+%   - Title, author, latest modifcation date etc.
+%   - Table of contents
+\maketitle
+\hrule
+\vspace{0.5cm}
+\tableofcontents
+\newpage
+
+\input{sections/addition_and_subtraction}
+\input{sections/exponents_and_roots}
+\input{sections/fractions}
+\input{sections/logarithms}
+\input{sections/multiplication}
+\input{sections/differentials}
+
+\end{document}
