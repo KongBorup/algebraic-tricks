@@ -1,17 +1,23 @@
 \section{Logarithms}
-These rules apply to all positive numbers $a$ and $b$ and all $n \neq 0$. These logarithms are base 10 ($\log_{10}$).
+These rules apply to all positive numbers $a$ and $c$ and all $n \neq 0$. $b$ and $d$ denote the logarithm base and is above 1.
 \begin{center}
     \begin{longtable}{lr}
-        $\log(a \cdot b) = \log(a) \cdot \log(b)$
+        $\log_b(a \cdot c) = \log_b(a) + \log_b(c)$
         &
-        $\log\left(\frac{a}{b}\right) = \log(a) - \log(b)$
+        $\log_b\left(\frac{a}{c}\right) = \log_b(a) - \log_b(c)$
         \\
-        $\log\left(a^n\right) = n \cdot \log(a)$
+        $\log_b\left(a^n\right) = n \cdot \log_b(a)$
         &
-        $\log\left(\sqrt[n]{a}\right) = \frac{\log(a)}{n}$
+        $\log_b\left(\sqrt[n]{a}\right) = \frac{\log_b(a)}{n}$
         \\
-        $10^{\log(a)} = a$
+        $b^{\log_b(a)} = a$
         &
-        $\log(1) = 0$
+        $\log_b{(b^a)} = a$
+        \\
+        $\log_b(b) = 1$
+        &
+        $\log_b(1) = 0$
+        \\
+        $\log_b(a) = \frac{\log_d(a)}{\log_d(b)}$
     \end{longtable}
 \end{center}
